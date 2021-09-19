@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
 # cargamos el modelo
-pipe = load(r'C:\\Users\\Alec\\OneDrive\\Documentos\\Programming Stuff\\HousePrice_Pred\\src\\model_1.joblib')
+pipe = load('model_1.joblib')
 
 
 def get_prediction(params):
